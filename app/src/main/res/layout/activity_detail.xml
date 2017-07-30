@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_detail_title"
+        android:textSize="20sp"
+        android:text="Apple iPhone 5S 16GB Factory Unlocked 4G LITE iOS Smartphone"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <ImageView
+        android:layout_width="242dp"
+        android:layout_height="211dp"
+        android:id="@+id/image_form_url"
+        android:layout_margin="10dp"
+        android:src="@drawable/ebay_notification1"
+        tools:layout_editor_absoluteX="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail_title"
+     />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_detail_price"
+        android:textColor="@color/green"
+        android:textSize="20sp"
+        android:text="96"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail_title"
+        app:layout_constraintLeft_toRightOf="@+id/image_form_url" />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_detail_des"
+        android:text="This is B+ stock item,meaning unit is in good cosmetic condition condition and may have minor scrapes or scratches."
+        android:textSize="15sp"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/image_form_url"
+        android:layout_marginTop="40dp" />
+
+
+    <TextView
+        android:layout_width="62dp"
+        android:layout_height="18dp"
+        android:id="@+id/tv_detail_loc"
+        android:text="NOTIFY"
+        android:textSize="13sp"
+        android:textStyle="italic"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail_price"
+        app:layout_constraintLeft_toRightOf="@+id/image_form_url" />
+
+
+
+    <Button
+        android:id="@+id/add_to_notify_button"
+        android:visibility="invisible"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:onClick="addToNotifications"
+        android:text="@string/notify_button_text"
+        android:textSize="10sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Inverse"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail_des"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp" />
+
+    <Button
+        android:id="@+id/remove_notification_button"
+        android:visibility="invisible"
+        android:layout_width="88dp"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:onClick="removeFromNotifications"
+        android:textSize="10sp"
+        android:text="@string/remove_button_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Inverse"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail_des" />
+
+    <Button
+        android:layout_width="88dp"
+        android:layout_height="50dp"
+        android:onClick="openEbay"
+        android:text="BUY NOW"
+        android:textColor="@color/red"
+        android:visibility="invisible"
+        android:textSize="10sp"
+        android:id="@+id/url_button"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail_loc"
+        app:layout_constraintLeft_toRightOf="@+id/image_form_url" />
+
+
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

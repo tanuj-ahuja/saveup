@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Ebaysearchresults</string>
+    <string name="error_message">Failed</string>
+    <string name="search">Search</string>
+    <string name="notify">Notifications</string>
+    <string name="notify_button_text">NOTIFY</string>
+    <string name="remove_button_text">REMOVE NOTIFICATION</string>
+    <string name="price_drop_notification_title">PRICE DROP!</string>
+    <string name="price_drop_notification_body">price has dropped</string>
+    <string name="hint_for_search">What you seek is seeking you!Find it</string>
+    <string name="new_price">New Price</string>
+    <string name="old_price">Old Price</string>
+</resources>

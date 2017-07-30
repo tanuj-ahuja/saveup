@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="241dp"
+        android:layout_height="104dp"
+        android:textSize="13sp"
+        android:text="iPhone (/ˈaɪfoʊn/ EYE-fohn) is a line of smartphones designed and marketed by Apple Inc."
+        android:fontFamily="monospace"
+        android:id="@+id/ebay_results"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:padding="16dp"
+        tools:layout_editor_absoluteY="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <ImageView
+        android:layout_width="86dp"
+        android:src="@drawable/ebay_notification"
+        android:layout_height="70dp"
+        android:id="@+id/image_display"
+        app:layout_constraintBottom_toBottomOf="@+id/ebay_results"
+        app:layout_constraintTop_toTopOf="@+id/ebay_results"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintRight_toLeftOf="@+id/ebay_results"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <TextView
+        android:layout_width="67dp"
+        android:layout_height="22dp"
+        android:id="@+id/price_of_item"
+        android:textSize="10sp"
+        android:text="65."
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/image_display"
+        android:layout_marginStart="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="24dp" />
+
+    <View
+        android:layout_width="368dp"
+        android:layout_height="1dp"
+        android:background="#dadada"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:id="@+id/view" />
+
+</android.support.constraint.ConstraintLayout>
